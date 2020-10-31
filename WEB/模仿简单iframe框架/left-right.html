@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background-color: white;
+        }
+
+        .main {
+            background-color: cyan;
+            width: 900px;
+            height: 600px;
+            margin: 0 auto;
+            margin-top: 40px;
+            position: relative;
+        }
+
+        .tabLeft {
+            background-color: whitesmoke;
+            width: 30%;
+            height: 100%;
+            position: absolute;
+        }
+
+        [class="menu"] {
+            background-color: whitesmoke;
+            margin: 30px 5px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            border: 1px solid white;
+        }
+
+        .tabLeft div:first-child {
+            margin-top: 30px;
+            background-color: whitesmoke;
+        }
+
+        .tabRight {
+            background-attachment: fixed;
+            text-decoration: none;
+            display: block;
+            height: 100%;
+            text-align: center; 
+        }
+
+        .tabLeft button {
+            margin-top: 20%;
+            font-size: 30px;
+        }
+
+        .index {
+            height: 100%;
+            display: none;
+        }
+
+        .news {
+            display: none;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .news,
+        .department,
+        .teachers,
+        .teaching, img {
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            position: relative;
+        }
+
+
+        .tabRight {
+            width: 70%;
+            height: 100%;
+            float: right;
+            overflow: hidden;
+        }
+
+        .tabRight div:target {
+            display: block;
+        }
+
+        a > button {
+            background-color: tomato;
+        }
+
+        .department,
+        .teachers,
+        .teaching {
+            display: none;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="tabLeft">
+            <div title="index" class="menu">
+                    <a href="#index"><button type="button" class="btn btn-primary">学校概况</button></a>
+            </div>
+            <div class="menu">
+                <a href="#news"><button type="button" class="btn btn-info">新闻中心</button></a>
+            </div>
+            <div class="menu">
+                <a href="#department"><button type="button" class="btn btn-info">机构设置</button></a>
+            </div>
+            <div class="menu">
+                <a href="#teachers"><button type="button" class="btn btn-info">师资队伍</button></a>
+            </div>
+            <div class="menu">
+                <a href="#teaching"><button type="button" class="btn btn-info">教育教学</button></a>
+            </div>
+        </div>
+        <div class="tabRight">
+            <div class="index" id="index">
+                <img src="img/teachers.png">
+            </div>
+            <div class="news" id="news">
+                <img src="img/news01.jpg">
+            </div>
+            <div class="department" id="department">
+                <img src="img/department.jpg">
+            </div>
+            <div class="teachers" id="teachers">
+                <img src="img/ahead.jpg">
+            </div>
+            <div class="teaching" id="teaching">
+                <img src="img/teaching.jpg">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
